@@ -2,11 +2,11 @@ version: '3'
 
 services:
   mysql:
-    image: mysql:8
+    image: mysql:8.0.33
     restart: always
     environment:
-      MYSQL_DATABASE: wipi
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: trello
+      MYSQL_ROOT_PASSWORD: 123456
     ports:
       - "3306:3306"
     volumes:
